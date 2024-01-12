@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SIGMA RESOURCES</title>
+  </head>
+  <body>
+    <h1>Care for Future</h1>
+    <p>At Sigma Resources, our philosophy is centered around fostering the independence of those under our care. We accomplish this through the provision of unparalleled care delivered by proficient caregivers and nurses equipped with the latest training. Within the Sigma Care Group, our committed office and management team stand ready to assist in any way possible, ensuring optimal support for those we serve.</p>
+    <p> Please enter the type of service you need:-  </P>
+    <form class="" action="{% url 'result'%}">
+      {%  csrf_token %}
+      <p>pclass</p>
+      <input type="text" name="pclass">
+      <p>sex</p>
+      <input type="text" name="sex">
+      <p>age</p>
+      <input type="text" name="age">
+      <p>sibsp</p>
+      <input type="text" name="sibsp">
+      <p>parent</p>
+      <input type="text" name="parch">
+      <p>fare</p>
+      <input type="text" name="fare">
+      <p>embarked</p>
+      <input type="text" name="embarked">
+      <p>title</p>
+      <input type="text" name="title">
+      <br>
+      <input type="submit">
+
+
+    </form>
+
+  </body>
+</html>
